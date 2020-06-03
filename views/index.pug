@@ -1,0 +1,16 @@
+extends layout
+
+block layout-content
+  div.View
+    h1.Banner MAAP Login Example
+    div.Message
+      div.Title
+        h3 MAAP Profile
+        h1(id='maapStatus') Not logged in
+      span(id='maapDetails').Details Login to MAAP to see your profile info and call the MAAP API
+      a(id='btnApi' onclick='callMaapApi()' style='display: none')
+          div.NavButton Call MAAP API 
+      span(id='maapApiResponse').Details 
+    div.NavButtons
+      a(onclick='openLoginWindow()')
+          div.NavButton Login to MAAP
