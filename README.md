@@ -72,4 +72,5 @@ The `proxyGrantingTicket` attribute found within the `cas:attributes` element is
 Once this response has been retrieved and returned to the host application client, the popup window can send a `window.opener.postMessage(ticketValue, url);` command.
 This will notify the parent window that the login process is complete, after which the parent window can close this popup window without any
 further action from the user.
+...
 
