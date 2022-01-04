@@ -1,4 +1,4 @@
-const MAAP_AUTH_HOST = "auth.nasa.maap.xyz";
+const MAAP_AUTH_HOST = "auth.maap-project.org";
 var proxyGrantingTicket = '';
 
 //Open login pop-up window pointing to the authentication server, 

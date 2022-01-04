@@ -17,7 +17,7 @@ app.get('/maapLogin', function(req, res){
     // input value from client
     var params = req.query;
 
-   serviceValidateUrl = 'https://auth.nasa.maap.xyz' +  
+   serviceValidateUrl = 'https://auth.maap-project.org' +  
     '/cas/p3/serviceValidate?ticket=' + params.ticket + 
     '&service=' + params.service + 
     '&pgtUrl=' + params.pgtUrl + '&state=';
@@ -44,7 +44,7 @@ app.get('/maapApi', function(req, res){
         headers: {
             'proxy-ticket': req.query.proxyTicket
         },
-        uri: 'https://api.maap.xyz/api/members/self',
+        uri: 'https://api.maap-project.org/api/members/self',
         method: 'GET'
         }, function (err, resp, body) {
             res.send(body);

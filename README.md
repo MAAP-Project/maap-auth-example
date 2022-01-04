@@ -21,7 +21,7 @@ Once a successful login is initated in the host application, a new popup window 
 
 `https://[maap auth server]/cas/login?service=[base url of host application]`
 
-Ex: `https://auth.nasa.maap.xyz/cas/login?service=http%3A%2F%2Flocalhost%3A8080`
+Ex: `https://auth.maap-project.org/cas/login?service=http%3A%2F%2Flocalhost%3A8080`
 
 This will open a CAS login page, from which the login process can begin. Upon a successful login using either ESA or URS, a final redirect
 will occur to the URL specified in the `service` parameter above. The full URL will look like the following:
@@ -35,7 +35,7 @@ and profile info:
 
 `https://[maap auth server]/p3/serviceValidate?ticket=[ticket]&service=[base url of host application]&pgtUrl=[maap auth server]&state=`
 
-Ex: `https://auth.nasa.maap.xyz/cas/p3/serviceValidate?ticket=ST-1234567890&service=http%3A%2F%2Flocalhost%3A8080&state=`
+Ex: `https://auth.maap-project.org/cas/p3/serviceValidate?ticket=ST-1234567890&service=http%3A%2F%2Flocalhost%3A8080&state=`
 
 This request will return an XML response containing the MAAP user's profile information and `proxyGrantingTicket`. Below is an example response:
 
